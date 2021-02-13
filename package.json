@@ -1,6 +1,6 @@
 {
   "name": "@zelaznogydna/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of useful tools I often use",
   "main": "index.js",
   "scripts": {
