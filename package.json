@@ -1,0 +1,23 @@
+{
+  "name": "@zelaznogydna/utils",
+  "version": "1.0.0",
+  "description": "A collection of useful tools I often use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zelaznogydna91/utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "tools"
+  ],
+  "author": "Andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zelaznogydna91/utils/issues"
+  },
+  "homepage": "https://github.com/zelaznogydna91/utils#readme"
+}
