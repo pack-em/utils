@@ -6,6 +6,10 @@ A collection of useful tools I often use.
 
 #### Check the [Imgur Album](https://imgur.com/a/0WBSoaM)
 
-### RandomColor
+### randomColor
 
 ![](https://i.imgur.com/hMC3SVR.png)
+
+### scrollRefIntoView
+
+![](https://i.imgur.com/w8ezWOC.png)
