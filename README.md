@@ -13,3 +13,7 @@ A collection of useful tools I often use.
 ### scrollRefIntoView
 
 ![](https://i.imgur.com/w8ezWOC.png)
+
+### isInView
+
+![](https://i.imgur.com/xwPxt1x.png)
