@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push-patch-pub": "git push && npm version patch && npm publish --access public"
+    "push-patch-pub": "git push && npm version patch && npm publish --access public",
+    "dev": "NODE_PATH=./lib "
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,17 @@
   "bugs": {
     "url": "https://github.com/zelaznogydna91/utils/issues"
   },
-  "homepage": "https://github.com/zelaznogydna91/utils#readme"
+  "homepage": "https://github.com/zelaznogydna91/utils#readme",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.12.17",
+    "babel-cli": "^6.18.0",
+    "babel-loader": "^8.2.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^7.20.0",
+    "eslint-plugin-react": "^7.22.0",
+    "webpack": "^5.23.0"
+  }
 }

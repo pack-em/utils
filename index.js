@@ -1,4 +1,6 @@
-import randomColor from "./src/randomColor";
-import scrollRefIntoView from "./src/scrollRefIntoView";
+import randomColor from 'randomColor';
+import scrollRefIntoView from 'scrollRefIntoView';
+import isInView from 'isInView';
+import mapIntoObject from 'mapIntoObject';
 
-export { randomColor, scrollRefIntoView };
+export { randomColor, scrollRefIntoView, isInView , mapIntoObject};
