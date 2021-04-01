@@ -3,4 +3,4 @@ import scrollRefIntoView from 'scrollRefIntoView';
 import isInView from 'isInView';
 import mapIntoObject from 'mapIntoObject';
 
-export { randomColor, scrollRefIntoView, isInView , mapIntoObject};
+export { randomColor, scrollRefIntoView, isInView , mapIntoObject,titleize};
