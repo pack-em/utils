@@ -22,6 +22,9 @@ A collection of useful tools I often use.
 
 ![](https://i.imgur.com/Qo9jr9R.png)
 
+### printApps
+
+
 ### toTitleCase
 
 ![](https://i.imgur.com/Q7ZVuc2.png)
