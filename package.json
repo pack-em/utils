@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "push-patch-pub": "git push && npm version patch && npm publish --access public",
-    "babeleate": "npx babel --cjs --no-babelrc --out-dir dist ./lib --presets babel-preset-es2015"
+    "babeleate": "npx babel --cjs --no-babelrc --out-dir dist ./lib --presets babel-preset-es2015",
+    "fuaaa": "npm run babeleate && git add -A && npm version patch && git push && npm publish --access public"
   },
   "repository": {
     "type": "git",
