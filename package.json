@@ -1,6 +1,6 @@
 {
   "name": "@zelaznogydna/utils",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A collection of useful tools I often use",
   "main": "dist/",
   "scripts": {
