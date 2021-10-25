@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "babeleate": "babel --cjs --no-babelrc --out-dir dist ./lib --presets babel-preset-es2015",
-    "fuaaa": "npm run babeleate && git add -A && npm version patch && git push && npm publish --access public"
+    "fuaaa": "npm run babeleate && git add -A && git commit -m \"commit before patching\" && npm version patch && git push && npm publish --access public"
   },
   "repository": {
     "type": "git",
