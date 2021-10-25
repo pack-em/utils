@@ -33,6 +33,10 @@ function pageChangeStop() {
 }
 window.addEventListener('popstate', pageChangeStop, true);
 
+/**
+ * @param {boolean} active - Blocked when active is true
+ * @param {{avoidBack: boolean, onBack: ()=>{}}} options - If avoidBack is in true intercepts browser's back navigation, pass a callback for onBack() to execute.
+ */
 var setupPageBlock = function setupPageBlock(active) {
   var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
       _ref$avoidBack = _ref.avoidBack,
