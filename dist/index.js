@@ -22,15 +22,6 @@ Object.defineProperty(exports, 'mapIntoObject', {
   }
 });
 
-var _printApps = require('./printApps');
-
-Object.defineProperty(exports, 'printApps', {
-  enumerable: true,
-  get: function get() {
-    return _interopRequireDefault(_printApps).default;
-  }
-});
-
 var _randomColor = require('./randomColor');
 
 Object.defineProperty(exports, 'randomColor', {
