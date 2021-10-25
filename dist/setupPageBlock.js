@@ -22,6 +22,7 @@ function pageChangeStop() {
   if (window.__blockedPage) {
     if (window.__blockedPage.state === window.__BlockPageStates.blocked) {
       window.history.pushState(null, null, window.__blockedPage.url);
+      if (window.__blockedPage.onBack) window.__blockedPage.onBack();
     } else if (window.__blockedPage.state === window.__BlockPageStates.released) {
       window.__blockedPage = null;
       setTimeout(function () {
@@ -33,7 +34,10 @@ function pageChangeStop() {
 window.addEventListener('popstate', pageChangeStop, true);
 
 var setupPageBlock = function setupPageBlock(active) {
-  var avoidBack = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+      _ref$avoidBack = _ref.avoidBack,
+      avoidBack = _ref$avoidBack === undefined ? true : _ref$avoidBack,
+      onBack = _ref.onBack;
 
   if (active) {
     // blocking page leave/refresh event
@@ -46,7 +50,7 @@ var setupPageBlock = function setupPageBlock(active) {
       } else {
         window.history.replaceState(null, null, pageUrl);
       }
-      window.__blockedPage = { state: window.__BlockPageStates.blocked, url: pageUrl };
+      window.__blockedPage = { state: window.__BlockPageStates.blocked, url: pageUrl, onBack: onBack };
     }
   } else if (!active) {
     window['on' + pageLeaveEventName] = null;
